@@ -18,10 +18,15 @@ Output: [‘b’, ‘a’, ‘c’]
 
 ## Analysis
 
+![Analysis](docs/graph.png)
+
 ## Running the project
 
 1. Clone the project and run ```npm install```
 2. Run tests: ```npm test```
+
+![Tests](docs/test.png)
+
 3. Run script: 
          
    * first time only: ```npm link```
