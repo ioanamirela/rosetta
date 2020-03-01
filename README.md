@@ -33,6 +33,10 @@ Output: [‘b’, ‘a’, ‘c’]
    
    * with no arguments: ```rosetta```
    
+   ![rosetta with no arguments](docs/cli.png)
+   
    * with arguments (separated by space): ```rosetta a b a```
    
-Running the script without arguments will output same cases as the tests. 
+   ![rosetta with args](docs/cli-args.png)
+   
+Note: Running the script without arguments will output same cases as the tests. 
