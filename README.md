@@ -13,35 +13,35 @@ Output: [‘b’, ‘a’, ‘c’]
 ## Assumptions
 
 1. All letters are in lowercase and ASCII characters.
-2. Input is always valid.
-3. Multiple orderings are not possible.
+2. Multiple orderings are not possible.
+3. The list of words has enough information to derive the order of the alphabet.
 
 ## Analysis
 
 ![Analysis](docs/graph.png)
 
-We compare the first different character of each word.
+We compare the first different character of each word ans start from there to derive the order.
 
-Algorithm:  we can build a graph to represent the relationship between characters, and then traverse it to find the ordering by performing a topological sort.
+Algorithm:  build a graph to represent the relationship between characters, and then traverse it to find the ordering by performing a topological sort.
 
-A topological sort is only possible if the graph has no directed cycles.
+A topological sort is only possible if the graph has no directed cycles. If a cycle is identified, it is not possible to derive the order of the alphabet - the algorithm returns an empty array.
 
 ## Running the project
 
-1. Clone the project and run ```npm install```
+1. Clone the repo and run ```npm install```
 2. Run tests: ```npm test```
 
 ![Tests](docs/test.png)
 
-3. Run script: 
+3. How to run: 
          
    * first time only: ```npm link```
    
-   * with no arguments: ```rosetta```
+   * with no command line arguments: ```rosetta```
    
    ![rosetta with no arguments](docs/cli.png)
    
-   * with arguments (separated by space):
+   * with command line arguments (separated by space): ```rosetta bca aaa acb```
    
    ![rosetta with args](docs/cli-args.png)
    
