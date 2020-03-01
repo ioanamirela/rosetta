@@ -1,8 +1,9 @@
+'use strict'
 const Graph =  require('./models/graph')
 
 function rosettaStone(words) {
   let graph = new Graph()
-  // add vertices for each character
+  // add vertices for each unique character
   words.forEach(w => w.split('').forEach(ch => graph.addVertex(ch)))
 
   words.reduce((prev, curr) => {
@@ -19,9 +20,7 @@ function rosettaStone(words) {
   // print the graph just for fun
   graph.print()
 
-  let ordering = graph.dfs()
-  console.log('Output: ', ordering)
-  return ordering
+  return graph.dfs()
 }
 
 module.exports = rosettaStone
