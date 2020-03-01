@@ -3,6 +3,9 @@
 
 const rosettaStone = require('../src/index')
 
+// command line arguments 0 and 1 are reserved
+// process.argv[0] - path to node
+// process.argv[1] - path to the file
 if (!process.argv[2]) {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
   console.log("Input: [ 'bca', 'aaa', 'acb']")

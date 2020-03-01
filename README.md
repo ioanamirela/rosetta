@@ -16,6 +16,8 @@ Output: [‘b’, ‘a’, ‘c’]
 2. Input is always valid.
 3. Multiple orderings are not possible.
 
+## Analysis
+
 ## Running the project
 
 1. Clone the project and run ```npm install```
