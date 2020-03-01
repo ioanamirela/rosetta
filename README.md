@@ -13,7 +13,8 @@ Output: [‘b’, ‘a’, ‘c’]
 ## Assumptions
 
 1. All letters are in lowercase and ASCII characters.
-2. Multiple orderings are not possible.
+2. Multiple orderings should not be possible, since the problem states the list of words will have enough information to derive the complete order of the alphabet, 
+but just in case, the algorithm will output a solution if multiple available or there isn't not enough info to derive a single solution.
 3. The list of words has enough information to derive the order of the alphabet.
 
 ## Analysis
@@ -26,17 +27,16 @@ Algorithm:  build a graph to represent the relationship between characters, and 
 
 A topological sort is only possible if the graph has no directed cycles. If a cycle is identified, it is not possible to derive the order of the alphabet - the algorithm returns an empty array.
 
-## Running the project
+## Running the project (instructions for macOS or Linux)
 
 1. Clone the repo and run ```npm install```
 2. Run tests: ```npm test```
 
 ![Tests](docs/test.png)
 
-3. How to run: 
+3. How to run (see troubleshooting section below in case of issues): 
          
-   * first time only: ```npm link```
-   
+   * first time only: ```npm link``` 
    * with no command line arguments: ```rosetta```
    
    ![rosetta with no arguments](docs/cli.png)
@@ -46,3 +46,12 @@ A topological sort is only possible if the graph has no directed cycles. If a cy
    ![rosetta with args](docs/cli-args.png)
    
 Note: Running the script without arguments will output same cases as the tests. 
+
+## Troubleshooting
+
+1. Permission denied when running ```npm link```
+
+   Problem: Most likely, the node installation was ran with root permissions so the global package installation is asking you to be root.
+  
+   * quick & dirty solution: ```sudo npm link```
+   * not so quick: re-install npm modules globally without sudo.

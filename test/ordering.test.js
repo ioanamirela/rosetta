@@ -20,4 +20,8 @@ describe("rosetta stone", () => {
   it("should output ['a', 'b', 'c'] for input: : ['bba','bbb', 'bbc']", () => {
     expect(rosettaStone(['bba','bbb', 'bbc'])).toEqual(['a', 'b', 'c'])
   })
+
+  it("should output a solution when multiple available or cannot derive a single one, i.e. for input: : ['abc','abd', 'abe']", () => {
+    expect(rosettaStone(['abc','abd', 'abe'])).toEqual(['c', 'd', 'e', 'b', 'a'])
+  })
 })

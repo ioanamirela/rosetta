@@ -26,6 +26,10 @@ if (!process.argv[2]) {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
   console.log("Input: ['bba', 'bbb', 'bbc']")
   console.log('Output: ',rosettaStone(['bba','bbb', 'bbc']))
+
+  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+  console.log("Input: ['abc', 'abd', 'abe']")
+  console.log('Output: ',rosettaStone(['abc','abd', 'abe']))
 }else{
   let args = process.argv.slice(2)
   console.log('Input: ', args)
