@@ -22,6 +22,10 @@ if (!process.argv[2]) {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
   console.log("Input: ['aa', 'bb', 'aa']")
   rosettaStone(['aa','bb', 'aa'])
+
+  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+  console.log("Input: ['bba', 'bbb', 'bbc']")
+  rosettaStone(['bba','bbb', 'bbc'])
 }else{
   let args = process.argv.slice(2)
   console.log("Input: ", args)

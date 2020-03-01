@@ -20,6 +20,12 @@ Output: [‘b’, ‘a’, ‘c’]
 
 ![Analysis](docs/graph.png)
 
+We compare the first different character of each word.
+
+Algorithm:  we can build a graph to represent the relationship between characters, and then traverse it to find the ordering by performing a topological sort.
+
+A topological sort is only possible if the graph has no directed cycles.
+
 ## Running the project
 
 1. Clone the project and run ```npm install```
@@ -35,7 +41,7 @@ Output: [‘b’, ‘a’, ‘c’]
    
    ![rosetta with no arguments](docs/cli.png)
    
-   * with arguments (separated by space): ```rosetta a b a```
+   * with arguments (separated by space):
    
    ![rosetta with args](docs/cli-args.png)
    

@@ -16,4 +16,8 @@ describe("rosetta stone", () => {
   it("should output empty array when no solution is found (cycle): ['aa','bb', 'aa']", () => {
     expect(rosettaStone(['aa','bb','aa'])).toEqual([])
   })
+
+  it("should output correct ordering for input: : ['bba','bbb', 'bbc']", () => {
+    expect(rosettaStone(['bba','bbb', 'bbc'])).toEqual(['a', 'b', 'c'])
+  })
 })
