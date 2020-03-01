@@ -7,14 +7,6 @@ class Graph {
     this.AdjList = new Map()
     this.hasCycle = false
   }
-  
-  getAdjList(){
-    return this.AdjList
-  }
-
-  getNoOfVertices(){
-    return this.AdjList.keys().size
-  }
 
   /**
    * Takes a vertex as an argument and adds it to the graph
