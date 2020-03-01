@@ -1,0 +1,24 @@
+{
+  "name": "Rosetta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Ioana Brooks",
+  "license": "ISC",
+  "bin": {
+    "rosetta": "./script/cli.js"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
