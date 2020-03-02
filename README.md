@@ -27,6 +27,12 @@ Algorithm:  build a graph to represent the relationship between characters, and 
 
 A topological sort is only possible if the graph has no directed cycles. If a cycle is identified, it is not possible to derive the order of the alphabet - the algorithm returns an empty array.
 
+Time complexity: The first step to create a graph takes O(N + K) time where N is the number of given words and K is the number of characters in given alphabet. 
+The second step is topological sorting. There are K vertices and at most N-1 edges in the graph, therefore the time complexity of topological sorting is O(N + K). 
+So the overall time complexity is O(N + K) + O(N + K) = 2 * O(N+K) which is O(N + K).
+
+Space complexity: O(K), where K is the number of characters in given alphabet.
+
 ## Deliverable
 1. Algorithm consisting of
     * Graph class 
